@@ -24,8 +24,8 @@
 #}
 
 store "varset" "TFE_TOKEN" {
-  #name     = "TFE_TOKEN"
-  id = "varset-vBjRFWXnAEXsP534"
+  name     = "TFE_TOKEN"
+  #id = "varset-vBjRFWXnAEXsP534"
   category = "env"
 }
 
