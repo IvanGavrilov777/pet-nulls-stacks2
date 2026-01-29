@@ -34,6 +34,7 @@ deployment "vancho" {
     prefix           = "vancho"
     instances        = 3
     TFE_TOKEN = store.varset.TFE_TOKEN.TFE_TOKEN
+    remote_state  = upstream_input.network_stack.publish_readstate
   }
 }
 
