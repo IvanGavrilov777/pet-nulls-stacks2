@@ -42,3 +42,9 @@ publish_output "publish_readstate" {
   value = deployment.vancho.readstate
   #sensitive = true
 }
+
+upstream_input "network_stack" {
+  type   = "stack"
+  source = "app.terraform.io/ivan-premium-trial/mstacks-testing/pet-nulls-stack"
+}
+
