@@ -34,17 +34,13 @@ deployment "vancho" {
     prefix           = "vancho"
     instances        = 3
     TFE_TOKEN = store.varset.TFE_TOKEN.TFE_TOKEN
-    remote_state  = upstream_input.network_stack.publish_readstate
+    remote_state  = upstream_input.network_stack.name
   }
 }
 
-publish_output "publish_readstate" {
-  description = "publish"
-  value = deployment.vancho.readstate
-  #sensitive = true
-}
 
-upstream_input "network_stack" {
+
+upstream_input "name" {
   type   = "stack"
   source = "app.terraform.io/ivan-premium-trial/stacks-testing/pet-nulls-stack"
 }
