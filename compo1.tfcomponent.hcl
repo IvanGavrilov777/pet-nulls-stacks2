@@ -1,5 +1,8 @@
 # Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
+variable "remote_state" {
+type = string
+}
 
 variable "prefix" {
   type = string
