@@ -42,6 +42,6 @@ deployment "vancho" {
 
 upstream_input "name" {
   type   = "stack"
-  source = "app.terraform.io/petya-train/Stacks/pet-nulls-stack"
+  source = "app.terraform.io/healthy-viper/Default Project/pet-nulls-stack"
 }
 
